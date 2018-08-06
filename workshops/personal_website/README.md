@@ -40,9 +40,13 @@ _If you already have a Repl.it account, skip to step 2 of [Getting ready to repl
 
 1. In a new tab, open https://repl.it/signup and create an account. You can use your newly created GitHub account to do this!
 
+![](img/repl-signup.gif)
+
 2. Since we're going to be making a website using HTML and CSS, let's create an [HTML repl](https://repl.it/languages/html).
 
 3. Yay! You've created your first repl! Now set the "repl" name to "Personal Site"
+
+![](img/repl-rename.gif)
 
 Congratulations, you've officially set up all of your coding tools for the semester!
 
