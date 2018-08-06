@@ -1,22 +1,20 @@
 ---
 name: Personal Website
-description: Your first website from scratch
-author: Hack Club staff
+description: Making your first website from scratch
+author: Hack Club staff + Yev
 group: start
 order: 1
 ---
 
 # Personal Website
 
-_**We recommend going through this workshop in Google Chrome.**_
-
 Prophet Orpheus, [our mascot](https://github.com/hackclub/dinosaurs/blob/master/README.md), is here to guide you through making your own personal website.
 
 It will look something like this:
 
-![](img/final_screenshot.png)
+![](img/sexy.png)
 
-Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `styles.css`).
+Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `index.css`).
 
 This workshop should take around 45 minutes.
 
@@ -34,67 +32,21 @@ This workshop should take around 45 minutes.
 
 ## Part I: Setup
 
-### 1) Signing Up for GitHub
+### Getting ready to repl it on Repl.it
 
-_If you already have a GitHub account, skip to step 3 of [Signing Up for GitHub](#1-signing-up-for-github)._
+_If you already have a Repl.it account, skip to step 2 of [Getting ready to repl it on Repl.it](#2-getting-ready-to-repl-it-onrepl.it)._
 
-GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
+[Repl.it](https://repl.it) is an online [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) with support for 40+ languages as well as frameworks and we'll be using it to host our website.
 
-1. Open https://github.com/join in a new tab and create a new account
-2. Verify your email by checking the inbox of the email you used
-3. Open https://github.com/hackclub/hackclub in a new tab and star the project by clicking the button on the top right that looks like this:
+1. In a new tab, open https://repl.it/signup and create an account. You can use your newly created GitHub account to do this!
 
-![](img/github_star.png)
+![](img/repl-signup.gif)
 
-_Pro tip: if you want a username that's already taken, you can often get it by [contacting GitHub](https://github.com/contact) (this is actually how we got the `hackclub` username on GitHub). Make sure that the username isn't actively used by another user before reaching out. [Click here](https://help.github.com/articles/name-squatting-policy/) for more details._
+2. Since we're going to be making a website using HTML and CSS, let's create an [HTML repl](https://repl.it/languages/html).
 
-### 2) Creating Your First GitHub Repository
+3. Yay! You've created your first repl! Now set the "repl" name to "Personal Site"
 
-GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
-
-1. Go to https://github.com/new
-
-2. Under "Repository name" write `USERNAME.github.io` (replace `USERNAME` with your actual username). You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
-
-   ![](img/gh_create_new_repo.png)
-
-3. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
-
-   ![](img/gh_copy_link.gif)
-
-### 3) Signing Up for Cloud9
-
-We'll be using a service called Cloud9 to write, save, and organize all the code we'll write in Hack Club.
-
-1. In a new tab, open https://hackclub.com/cloud9_setup and enter your email to get an invite.
-
-   ![](img/c9_setup_email.png)
-
-2. You'll get an invitation to join Hack Club on Cloud9 in your inbox. Click the link in the invite and you'll see this screen:
-
-   ![](img/c9_start_signup.png)
-
-   You should end up with a screen that looks like this:
-
-   ![](img/c9_dashboard.png)
-
-3. Click the gray box that says "Create a new workspace".
-
-   ![](img/c9_create_new_workspace_button.gif)
-
-4. Set the "Workspace name" to `projects`.
-
-   ![](img/c9_name_workspace.png)
-
-5. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository.
-
-   ![](img/c9_clone_from_existing.png)
-
-6. Click the green "Create Workspace" button at the bottom.
-
-You should now see a screen looks something like this:
-
-![](img/c9_ide_loaded.png)
+![](img/repl-rename.gif)
 
 Congratulations, you've officially set up all of your coding tools for the semester!
 
@@ -102,15 +54,15 @@ Now we're ready to start the website!
 
 ## Part II: The HTML File
 
-### 1) Creating the HTML file
+### 1) The HTML file
 
 HTML stands for Hypertext Markup Language. Every website from the New York Times to Twitch uses HTML to display content on the web.
 
-We'll start by making an `index.html` file. Right click the `projects` folder in the left sidebar, select "New File," and name the file `index.html`.
+The file you're currently looking at is our `index.html` file and you can tell we're looking at HTML because of all the angle brackets.
 
-![](img/c9_create_index_html.gif)
+![](img/html_repl.png)
 
-Now we'll add the basic HTML template. Double-click on `index.html` and **type** the following. **DO NOT COPY AND PASTE**.
+Go ahead and delete everything in `index.html` then paste in the following code
 
 ```html
 <!DOCTYPE html>
@@ -124,17 +76,23 @@ Now we'll add the basic HTML template. Double-click on `index.html` and **type**
 
 This structure is common to all HTML pages. In fact, you can take a look for yourself! Just right click on any web page, including this one, and click "View page source" to see what's going on behind the scenes. You'll find each of these elements on every page --- the doctype, and an HTML tag wrapped around a head and body.
 
+![](img/inspect.png)
+
 Before proceeding, we'll briefly go over what this template means. HTML works by storing information inside tags. `<html></html>` is an example of one such tag. Inside `<html></html>`, we've placed two other sets of tags: `<head></head>` (which wraps around the "head") and `<body></body>` (which wraps around the "body"). The body holds everything you would see in the actual tab/window when you open the page, while the head conveys information about the page to the browser. `<!DOCTYPE html>` tells the browser what version of HTML to expect. Since it is a language, HTML is constantly growing and updating, so there are multiple versions. In our case, we are going to use HTML5, the latest version.
 
 ### 2) Previewing the Page
 
-Let's check out what our HTML file looks like in Live Preview! First, we'll save the file by clicking "File" → "Save" (or use the shortcut <kbd>Ctrl+s</kbd> / <kbd>Command+s</kbd>). You'll need to do this each time you want to view he preview of your project. Then, you can preview what the website looks like by clicking "Preview" → "Live Preview File"
+Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl+Enter</kbd> (or <kbd>Command+Enter</kbd> for Mac)
 
-![](img/c9_live_preview.gif)
+![](img/run.png)
 
-You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab, at a temporary URL.
+From there, the live preview to the right of the editor should show what your website looks like. If you want to view it in a new tab, the URL above the website preview is the live URL for your website
 
-![](img/c9_external_prev.gif)
+![](img/url.png)
+
+You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab at the aforementioned URL
+
+![](img/preview.png)
 
 As you can see, the page is blank. This is because we haven't added anything to the `body` section yet. Let's add some content!
 
@@ -202,26 +160,11 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 </html>
 ```
 
-![](img/c9_index_html.png)
+![](img/no_css.png)
 
-Remember, you need to save your work every time you make a change --- otherwise you won't be able to see it!
+Remember, you need to **Run** your program every time you want to see your updated website.
 
-Hurray! You've created a basic HTML page! Let's save our progress with git!
-
-We're going to be using a terminal to do this, but you might know it as that-thing-hackers-use-in-movie.
-
-![](img/c9_command_line.gif)
-
-Using the terminal allows us to do things on computers which you can't usually do with a standard graphical user interface. We don't expect you to be a terminal master by the end of this tutorial, but with this initial exposure hopefully you'll be able to continue learning more about it over time!
-
-In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
-
-- `git add --all` (then press <kbd>enter</kbd>)
-- `git commit -m "Create personal website"` (then press <kbd>enter</kbd>)
-
-Now, if you type `git log`, you'll be able to see your first commit! Think of git as a way to save your project in stages, much like how a game allows you to save different versions and go back.
-
-Though we've made a commit and saved our changes, we're not done. Our webpage is fully functional, but needs a little help in the look-and-feel department. Fret not. CSS will allow you to manipulate the styling of your page in all your needs.
+Though our website has some text on it and exists on the _internet_, we're not done. Our webpage is fully functional, but needs a little help in the look-and-feel department. Fret not. CSS will allow you to manipulate the styling of your page in all your needs.
 
 ## Part III: The CSS File
 
@@ -229,23 +172,19 @@ So what is CSS? CSS, also known as Cascading Style Sheets, is a language used fo
 
 While HTML oversees the content and the way it's structured, CSS is how you'll specify how you'd like your content to look --- with it you can set things like colors, spacing, and more.
 
-### 1) Creating the CSS File
+### 1) Using CSS
 
-We'll now make an `styles.css` file. Right click the `projects` folder, select "New File," and name the file `styles.css`.
+We already have an `index.css` in the file tree and this is called an external style sheet because the CSS file is external to the HTML file (i.e., the stylesheet is not inside the HTML file).
 
-![](img/c9_create_styles_css.gif)
+![](img/index_css.png)
 
-This is called an external style sheet because the CSS file is external to the HTML file (i.e., the stylesheet is not inside the HTML file).
-
-### 2) Linking the CSS file to the HTML file
-
-Although we've created a CSS file, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html` (between `<head>` and `</head>`), because the head is where we tell information about the page to the browser.
+Although we have a CSS file, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html` (between `<head>` and `</head>`), because the head is where we tell information about the page to the browser.
 
 ```html
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="index.css" />
 ```
 
-`<link />` is the link tag, which describes relationships between the current file (in this case, `index.html`), and some external file (`styles.css`). In our example, `rel="stylesheet"` specifies what this relationship is, i.e., that `styles.css` is a stylesheet, and `href` (hypertext reference) specifies where the file can be found (in this case, it's just the filename `styles.css`). The link tag, similar to the image tag, is a self-closing tag, once again denoted by the `/` that precedes the `>`.
+`<link />` is the link tag, which describes relationships between the current file (in this case, `index.html`), and some external file (`index.css`). In our example, `rel="stylesheet"` specifies what this relationship is, i.e., that `index.css` is a stylesheet, and `href` (hypertext reference) specifies where the file can be found (in this case, it's just the filename `index.css`). The link tag, similar to the image tag, is a self-closing tag, once again denoted by the `/` that precedes the `>`.
 
 Our HTML file now looks like so:
 
@@ -253,7 +192,7 @@ Our HTML file now looks like so:
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="index.css"/>
     </head>
     <body>
         <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
@@ -266,11 +205,11 @@ Our HTML file now looks like so:
 
 Remember to save your `index.html`.
 
-### 3) Adding Styles to the Stylesheet
+### 2) Adding Styles to the Stylesheet
 
 Now that we've linked our CSS file to our HTML file, let's write some CSS to resize the image.
 
-Open up `styles.css` and type the following:
+Open up `index.css` and type the following:
 
 ```css
 img {
@@ -305,7 +244,7 @@ body {
 
 Here is the transformation that your stylesheet will have undergone at the end of your endeavors:
 
-![](img/c9_css_progression.gif)
+![](img/complete_css.png)
 
 You can take this even further by adding a bit of color to the page! The attribute `color` **(spelled without a u)** allows you to set the text color, and `background-color` allows you to set a background color. You can find a list of supported color names over at [W3Schools](https://www.w3schools.com/colors/colors_names.asp). Keep in mind that it's a good idea to pick a combination of colors will keep the text readable.
 
@@ -318,30 +257,23 @@ body {
 }
 ```
 
-Now let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit our changes.
-
-Remember to save both `index.html` and `styles.css`! We'll once again use the terminal in Cloud9 to persist our changes with git.
-
-- `git add --all` (then press <kbd>enter</kbd>)
-- `git commit -m "Add styling to personal website"` (then press <kbd>enter</kbd>)
+Now be sure to **Run** if you haven't already so that the URL gives the most recent version of your website. Ah, it is truly beautiful to behold.
 
 ![](img/celebrate_harry_potter.gif)
 
 ## Part IV: Publishing
 
-Right now we can only see our website on our own computer. Let's get our website online!
+This whole time, you probably had a funky URL that came out of some alphabet soup but you can change that by clicking on the arrow icon next to the name of your repl
 
-1. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
-  - `git push` (then press <kbd>enter</kbd>)
-    - Enter your GitHub username (then press <kbd>enter</kbd>).
-    - Enter your GitHub password (then press <kbd>enter</kbd>). _The characters won't show up on the screen, but rest assured, they are still being typed._
-2. Now try to view the website by going to `USERNAME.github.io` (replace `USERNAME` with your actual GitHub username)
+![](img/edit_name.png)
+
+Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (or <kbd>Escape</kbd> to cancel your name change)
 
 #### Celebrate!
 
 ![](img/celebrate_rush_hour.gif)
 
-Yes! Your website is now public on the internet!
+Yes! Your website is fantastic **AND** public on the internet!
 
 ## Part V: Hacking
 
@@ -352,6 +284,11 @@ Want to add more pictures? Google it!
 Want to add more text? Your entire life story? Background image? Background music? Video? More pages? Google it!
 
 A good way to get ideas for what to add to your website is to look at other people's websites. Find a website that you like, either from the below list or from somewhere else on the internet, pick one aspect of that website that you would like on your own website, and Google for ways to make it happen!
+
+**Websites Made by Developers Club Cab Members:**
+ - [James](https://loopiness.github.io/)
+ - [Enoch](https://enociz.github.io/hackclub-workshop-demo/)
+ - [Brian](https://briancmlee.github.io/personal-site/)
 
 **Websites Made by Other Hack Club Hackers:**
 
@@ -379,9 +316,11 @@ These are some additional resources that you can use to make your site even bett
 - [Free Code Camp](http://www.freecodecamp.com/map): _Interactive and very methodical._
 - [Treehouse](https://teamtreehouse.com/library/html/introduction/): _Their videos are extremely comprehensive and thorough._
 
+<!-- I'd like to thank Latta Lattes for carrying me through the rewriting of this tutorial - Yev -->
+
 ## Part VI: Sharing with the Community
 
-Now that you have finished building a website, you should share your beautiful creation --- because your site is on the internet, you can share it with anyone who is also online! Remember, it's as easy as giving them your URL: `USERNAME.github.io`!
+Now that you have finished building a website, you should share your beautiful creation --- because your site is on the internet, you can share it with anyone who is also online! Remember, it's as easy as giving them your URL!
 
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the world wide Hack Club community there is no better place to do that than on Slack.
 
