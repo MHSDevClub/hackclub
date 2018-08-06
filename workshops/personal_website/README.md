@@ -18,8 +18,8 @@ Here's the [live demo][final_live_demo] and [final code][final_code] (see `index
 
 This workshop should take around 45 minutes.
 
-[final_live_demo]: https://website--prophetorpheus.repl.co
-[final_code]: https://repl.it/@prophetorpheus/website
+[final_live_demo]: https://prophetorpheus.github.io
+[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io
 
 **Table of contents:**
 
@@ -31,8 +31,35 @@ This workshop should take around 45 minutes.
 - [Part VI: Sharing with the Community](#part-vi-sharing-with-the-community)
 
 ## Part I: Setup
+### 1) Signing Up for GitHub
 
-### Getting ready to repl it on Repl.it
+_If you already have a GitHub account, skip to step 3 of [Signing Up for GitHub](#1-signing-up-for-github)._
+
+GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
+
+1. Open https://github.com/join in a new tab and create a new account
+2. Verify your email by checking the inbox of the email you used
+3. Open https://github.com/hackclub/hackclub in a new tab and star the project by clicking the button on the top right that looks like this:
+
+![](img/github_star.png)
+
+_Pro tip: if you want a username that's already taken, you can often get it by [contacting GitHub](https://github.com/contact) (this is actually how we got the `hackclub` username on GitHub). Make sure that the username isn't actively used by another user before reaching out. [Click here](https://help.github.com/articles/name-squatting-policy/) for more details._
+
+### 2) Creating Your First GitHub Repository
+
+GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
+
+1. Go to https://github.com/new
+
+2. Under "Repository name" write `USERNAME.github.io` (replace `USERNAME` with your actual username). You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
+
+   ![](img/gh_create_new_repo.png)
+
+3. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
+
+   ![](img/gh_copy_link.gif)
+
+### 3) Getting ready to repl it on Repl.it
 
 If you already have a Repl.it account, go ahead and spin up an [HTML repl](https://repl.it/languages/html) then move on to [Part II](#part-ii-the-html-file)
 
