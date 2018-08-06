@@ -33,8 +33,6 @@ This workshop should take around 45 minutes.
 ## Part I: Setup
 ### 1) Signing Up for GitHub
 
-_If you already have a GitHub account, skip to step 3 of [Signing Up for GitHub](#1-signing-up-for-github)._
-
 GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
 
 1. Open https://github.com/join in a new tab and create a new account
@@ -56,13 +54,24 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
 ### 3) Getting ready to repl it on Repl.it
 
-If you already have a Repl.it account, go ahead and spin up an [HTML repl](https://repl.it/languages/html) then move on to [Part II](#part-ii-the-html-file)
+_If you already have a Repl.it account, skip to step 2 of [Getting ready to repl it on Repl.it](#2-getting-ready-to-repl-it-onrepl.it)._
 
 [Repl.it](https://repl.it) is an online [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) with support for 40+ languages as well as frameworks and we'll be using it to host our website.
 
-To create an account, all you need to do is [sign up](https://repl.it/signup) and verify your email. From there, you're ready to get going!
+1. In a new tab, open https://repl.it/signup and create an account. You can use your newly created GitHub account to do this!
 
-Since we're going to be making a website using HTML and CSS, let's create an [HTML repl](https://repl.it/languages/html).
+2. Since we're going to be making a website using HTML and CSS, let's create an [HTML repl](https://repl.it/languages/html).
+
+3. Yay! You've created your first repl! Now set the "repl" name to "Personal Site"
+
+4. And link your repl to your GitHub repository by typing in the following commands:
+
+- `git init` (then press <kbd>enter</kbd>)
+- `git add *` (then press <kbd>enter</kbd>)
+- `git commit -m "first commit"` (then press <kbd>enter</kbd>)
+- `git remote add origin` (then paste in the [copied url](#3-creating-your-first-github-repository) and press <kbd>enter</kbd>)
+
+Congratulations, you've officially set up all of your coding tools for the semester!
 
 Now we're ready to start the website!
 
