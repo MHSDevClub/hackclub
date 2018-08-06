@@ -31,28 +31,8 @@ This workshop should take around 45 minutes.
 - [Part VI: Sharing with the Community](#part-vi-sharing-with-the-community)
 
 ## Part I: Setup
-### 1) Signing Up for GitHub
 
-GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
-
-1. Open https://github.com/join in a new tab and create a new account
-2. Verify your email by checking the inbox of the email you used
-
-### 2) Creating Your First GitHub Repository
-
-GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
-
-1. Go to https://github.com/new
-
-2. Under "Repository name" write `USERNAME.github.io` (replace `USERNAME` with your actual username). You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
-
-   ![](img/gh_create_new_repo.png)
-
-3. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
-
-   ![](img/gh_copy_link.gif)
-
-### 3) Getting ready to repl it on Repl.it
+### Getting ready to repl it on Repl.it
 
 _If you already have a Repl.it account, skip to step 2 of [Getting ready to repl it on Repl.it](#2-getting-ready-to-repl-it-onrepl.it)._
 
@@ -63,13 +43,6 @@ _If you already have a Repl.it account, skip to step 2 of [Getting ready to repl
 2. Since we're going to be making a website using HTML and CSS, let's create an [HTML repl](https://repl.it/languages/html).
 
 3. Yay! You've created your first repl! Now set the "repl" name to "Personal Site"
-
-4. And link your repl to your GitHub repository by typing in the following commands:
-
-- `git init` (then press <kbd>enter</kbd>)
-- `git add *` (then press <kbd>enter</kbd>)
-- `git commit -m "first commit"` (then press <kbd>enter</kbd>)
-- `git remote add origin` (then paste in the [copied url](#3-creating-your-first-github-repository) and press <kbd>enter</kbd>)
 
 Congratulations, you've officially set up all of your coding tools for the semester!
 
@@ -307,6 +280,11 @@ Want to add more pictures? Google it!
 Want to add more text? Your entire life story? Background image? Background music? Video? More pages? Google it!
 
 A good way to get ideas for what to add to your website is to look at other people's websites. Find a website that you like, either from the below list or from somewhere else on the internet, pick one aspect of that website that you would like on your own website, and Google for ways to make it happen!
+
+**Websites Made by Developers Club Cab Members:**
+ - [James](https://loopiness.github.io/)
+ - [Enoch](https://enociz.github.io/hackclub-workshop-demo/)
+ - [Brian](https://briancmlee.github.io/personal-site/)
 
 **Websites Made by Other Hack Club Hackers:**
 
