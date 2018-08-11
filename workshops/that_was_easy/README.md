@@ -63,6 +63,12 @@ Similar to our HTML file in the Personal Website workshop, we've created a bare 
 
 Go ahead an **Run** your repl; you should just see a blank page in the preview.
 
+### Adding 'that_was_easy.mp3' to your repl
+
+First download the 'that_was_easy.mp3' file by clicking [here](https://raw.githubusercontent.com/MHSDevClub/hackclub/master/workshops/that_was_easy/sounds/that_was_easy.mp3).
+
+Then add the file to your repl by uploading the audio file.
+
 ### Adding `index.js` to the HTML File
 
 Now we must connect the two files. Since HTML file depends on JavaScript file to make our button play sounds, we must include a reference to the JavaScript file within the HTML file. We can do this by using an HTML tag called the script tag (`<script>`), which is how JavaScript files are included in HTML files.
