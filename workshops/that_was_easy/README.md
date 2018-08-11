@@ -479,11 +479,6 @@ function delegateKeypress(event) {
 
 And that's it! Save your `index.js` and try out the key binding!
 
-Then, let's save our progress with git by running the following commands in the Cloud9 terminal (`Alt+t`). Make sure you've saved all of your files on Cloud9!
-
-- `git add --all`
-- `git commit -m "Add key binding to that was easy button"`
-
 ## Part VI: Publishing and Sharing
 
 Post on [`#shipit`](https://hackclub.slack.com/messages/shipit) with the URL, so everyone can see and play with your amazing creation!
