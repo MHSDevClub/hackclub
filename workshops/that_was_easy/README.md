@@ -65,6 +65,8 @@ Go ahead an **Run** your repl; you should just see a blank page in the preview.
 
 ### Adding 'that_was_easy.mp3' to your repl
 
+![](img/that_was_easy_download.gif)
+
 First download the 'that_was_easy.mp3' file by clicking [here](https://raw.githubusercontent.com/MHSDevClub/hackclub/master/workshops/that_was_easy/sounds/that_was_easy.mp3).
 
 Then add the file to your repl by uploading the audio file.
