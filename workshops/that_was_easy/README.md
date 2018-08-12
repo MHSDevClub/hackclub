@@ -140,6 +140,12 @@ Lastly, we'll add our `index.css` to the HTML file. Add it to the **head** of `i
 </html>
 ```
 
+### Submitting your repl.it link
+
+Now submit the link to repl you've set up through this [Google Form](https://goo.gl/forms/gN94Iyj90RbCm3So1)! We'll be using your submissions to track your progress and attendance so make sure to fill it out! 
+
+(But if you are uncomfortable sharing your work with us, that's fine too -just come have a chat with us and let us know!)
+
 ## Part II: The HTML File
 
 ### Adding the Button
